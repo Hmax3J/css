@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>attribute</title>
+    <style>
+        a[target] {
+            border: .1rem solid;
+        }
+
+        a[href='fire.html'] {
+            text-decoration: none;
+        }
+
+        a[class~='best'] { /* best 클래스가 있는 a객체를 의미한다. */
+            background: yellow;
+        }
+
+        a[class|='best'] { /* class이름에 best라는 접두사가 붙어 있는것을 의미한다. */
+            border: .1rem dotted;
+        }
+
+        a[class='best'] { /* class이름이 best로 끝나는 것을 의미한다. */
+            background: ;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href='tree.html' target='_blank'>목</a></li>
+        <li><a href='fire.html'>화</a></li>
+        <li><a class='my best choice'>토</a></li> <!-- my, best, choice 3개의 클래스가 적용된다. 스페이스바로 클래스를 만든다.-->
+        <li><a class='best-choice'>금</a></li>
+        <li><a class='mybest'>수</a></li>
+    </ul>
+</body>
+</html>
