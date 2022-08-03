@@ -20,8 +20,16 @@
             border: .1rem dotted;
         }
 
-        a[class='best'] { /* class이름이 best로 끝나는 것을 의미한다. */
-            background: ;
+        a[class^='best'] { /* class이름이 best로 시작하는 것을 의미한다. */
+            background: lightgreen;
+        }
+
+        a[class$='best'] { /* class이름이 best로 끝나는 것을 의미한다. */
+            background: pink;
+        }
+
+        a[class*='best'] { /* class이름에 best가 포함되는 것을 의미한다. */
+            background: lightblue;
         }
     </style>
 </head>
