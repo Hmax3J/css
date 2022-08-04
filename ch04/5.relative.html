@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>position: relative</title>
+    <style>
+        div {
+            padding: 3rem;
+            float: left;
+        }
+
+        .one {
+            background: red;
+        }
+
+        .two { /* relative로 객체를 어디에 둘 지 정할 수 있다. layout할 때 사용하면 된다. */
+            background: orange;
+            position: relative; /* static 이었을 때 위치할 곳이 원점이 된다. */
+            left: 2rem;
+            top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class='one'></div>
+    <div class='two'></div>
+</body>
+</html>

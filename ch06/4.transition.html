@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>transition</title>
+    <style>
+        div {
+            width: 10rem;
+            height: 10rem;
+            background: red;
+            transition-property: background, border-radius; /* 속성을 무엇을 줄건지 선택한다. */
+            transition-duration: 1s; /* 바뀌는 지연시간을 준다. */
+            transition-delay: .5s; /* 진행되기 전에 딜레이를 준다. */
+        }
+
+        div:hover {
+            background: blue;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

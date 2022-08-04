@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>float</title>
+    <style>
+        div {
+            padding: 1rem;
+            margin-right: .5em; /* 특정방향에만 마진을 준다. margin만 쓰면 4방향 다 적용된다. */
+        }
+
+        .one {
+            background: red;
+            float: left;
+        }
+
+        .two {
+            background: orange;
+            float: left;
+        }
+
+        .three {
+            background: yellow;
+        }
+
+        .four {
+            background: green;
+            float: left;
+        }
+
+        .five {
+            background: lightgreen;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class='one'>one</div>
+    <div class='two'>two</div>
+    <div class='three'>three</div>
+    <div class='four'>four</div>
+    <div class='five'>five</div>
+</body>
+</html>
